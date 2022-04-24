@@ -1,2 +1,2 @@
 # Russian-Roulette-projects
-Basic projects in different languages to learn
+These scripts are incredibly basic, and are some of my first ever projects.
