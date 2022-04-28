@@ -1,14 +1,16 @@
 import random
 import time
 
-number = random.randint(1, 100)
+dif = 100
+#Change the value of dif to change the difficulty!
+number = random.randint(1, dif)
 score = float(1)
 
 print("The goal of the game is to guess the number, and get the lowest score possible!")
 time.sleep(1)
 print("You will be told if the number you guessed is greater or lesser than the actual number!")
 time.sleep(1)
-print("Pick a number between 1 and 100!")
+print("Pick a number between 1 and ", dif, "!")
 
 while True:
     guess = float(input("Enter your guess!"))
