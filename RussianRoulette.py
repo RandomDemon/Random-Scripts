@@ -1,19 +1,14 @@
 import random
 import time
 
-bullet = random.randint(1,6)
-shot = random.randint(1,6)
-ready = True
+bullet = float(random.randint(1,6))
 
-if ready == True:
-    print("The bullet is in slot...")
-    print(bullet)
-    time.sleep(2)
+while True:
+    shot = float(input("Enter a number from 1-6"))
     print("You are...")
     time.sleep(1)
-if bullet == shot:
-    print("Dead!")
-    time.sleep(5)
-else:
-    print("Alive!")
-    time.sleep(5)
+    if bullet == shot:
+     print("Dead!")
+    else:
+      print("Alive!")
+    
