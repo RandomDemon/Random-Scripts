@@ -9,6 +9,7 @@ while True:
     time.sleep(1)
     if bullet == shot:
      print("Dead!")
+     time.sleep(1)
+     break
     else:
       print("Alive!")
-    
