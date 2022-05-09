@@ -67,11 +67,21 @@ def blackjack(dealer_hand, player_hand):
 		time.sleep(1)
 		play_again()
 
+def both(dealer_hand, play_again):
+    if total(player_hand) >=22 and total(dealer_hand) >=22:
+        print_results(dealer_hand, player_hand)
+        time.sleep(1)
+        print("Both you and the dealer bust!")
+
 def score(dealer_hand, player_hand):
 	if total(player_hand) == 21:
 		print_results(dealer_hand, player_hand)
 		time.sleep(1)
 		print ("Congratulations! You got a Blackjack!\n")
+	elif total(player_hand) >=22 and total(dealer_hand) >=22:
+	    print_results(dealer_hand, player_hand)
+	    time.sleep(1)
+	    print("Both you and the dealer bust!")
 	elif total(dealer_hand) == 21:
 		print_results(dealer_hand, player_hand)	
 		time.sleep(1)
@@ -91,7 +101,7 @@ def score(dealer_hand, player_hand):
 	elif total(player_hand) > total(dealer_hand):
 		print_results(dealer_hand, player_hand)  
 		time.sleep(1)
-		print ("Congratulations. Your score is higher than the dealer. You win\n")		
+		print ("Congratulations. Your score is higher than the dealer. You win\n")
 
 def game():
 	choice = 0
