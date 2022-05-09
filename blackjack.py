@@ -81,7 +81,7 @@ def score(dealer_hand, player_hand):
 	elif total(player_hand) >=22 and total(dealer_hand) >=22:
 	    print_results(dealer_hand, player_hand)
 	    time.sleep(1)
-	    print("Both you and the dealer bust!")
+	    print("Both you and the dealer bust!\n")
 	elif total(dealer_hand) == 21:
 		print_results(dealer_hand, player_hand)	
 		time.sleep(1)
@@ -101,7 +101,7 @@ def score(dealer_hand, player_hand):
 	elif total(player_hand) > total(dealer_hand):
 		print_results(dealer_hand, player_hand)  
 		time.sleep(1)
-		print ("Congratulations. Your score is higher than the dealer. You win\n")
+		print ("Congratulations. Your score is higher than the dealer. You win!\n")
 
 def game():
 	choice = 0
