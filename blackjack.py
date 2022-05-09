@@ -1,4 +1,3 @@
-import os
 import random
 import time
 
@@ -49,14 +48,7 @@ def hit(hand):
 	hand.append(card)
 	return hand
 
-def clear():
-	if os.name == 'nt':
-		os.system('CLS')
-	if os.name == 'posix':
-		os.system('clear')
-
 def print_results(dealer_hand, player_hand):
-	clear()
 	print ("The dealer has a " + str(dealer_hand) + " for a total of " + str(total(dealer_hand)))
 	time.sleep(1)
 	print ("You have a " + str(player_hand) + " for a total of " + str(total(player_hand)))
@@ -64,36 +56,45 @@ def print_results(dealer_hand, player_hand):
 def blackjack(dealer_hand, player_hand):
 	if total(player_hand) == 21:
 		print_results(dealer_hand, player_hand)
+		time.sleep(1)
 		print ("Congratulations! You got a Blackjack!\n")
+		time.sleep(1)
 		play_again()
 	elif total(dealer_hand) == 21:
 		print_results(dealer_hand, player_hand)		
+		time.sleep(1)
 		print ("Sorry, you lose. The dealer got a blackjack.\n")
+		time.sleep(1)
 		play_again()
 
 def score(dealer_hand, player_hand):
 	if total(player_hand) == 21:
 		print_results(dealer_hand, player_hand)
+		time.sleep(1)
 		print ("Congratulations! You got a Blackjack!\n")
 	elif total(dealer_hand) == 21:
 		print_results(dealer_hand, player_hand)	
+		time.sleep(1)
 		print ("Sorry, you lose. The dealer got a blackjack.\n")
 	elif total(player_hand) > 21:
 		print_results(dealer_hand, player_hand)
+		time.sleep(1)
 		print ("Sorry. You busted. You lose.\n")
 	elif total(dealer_hand) > 21:
 		print_results(dealer_hand, player_hand)
+		time.sleep(1)
 		print ("Dealer busts. You win!\n")
 	elif total(player_hand) < total(dealer_hand):
 		print_results(dealer_hand, player_hand)
+		time.sleep(1)
 		print("Sorry. Your score isn't higher than the dealer. You lose.\n")
 	elif total(player_hand) > total(dealer_hand):
 		print_results(dealer_hand, player_hand)  
+		time.sleep(1)
 		print ("Congratulations. Your score is higher than the dealer. You win\n")		
 
 def game():
 	choice = 0
-	clear()
 	print ("WELCOME TO BLACKJACK!\n")
 	dealer_hand = deal(deck)
 	player_hand = deal(deck)
@@ -104,7 +105,6 @@ def game():
 		blackjack(dealer_hand, player_hand)
 		time.sleep(1)
 		choice = input("Do you want to [H]it, [S]tand, or [F]old: ").lower()
-		clear()
 		if choice == "h":
 			hit(player_hand)
 			while total(dealer_hand) < 17:
