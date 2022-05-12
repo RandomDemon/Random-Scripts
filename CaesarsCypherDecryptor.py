@@ -14,9 +14,9 @@ txt = input("What would you like to decrypt?")
 s = 20
 
 time.sleep(1)
-print("Plain txt : " + txt)  
+print("Cypher Text : " + txt)  
 time.sleep(1)
 print("Shift pattern : " + str(s))  
 time.sleep(1)
-print("Cipher: " + encypt_func(txt, s))  
+print("Cipher Text : " + encypt_func(txt, s))  
 time.sleep(3)
