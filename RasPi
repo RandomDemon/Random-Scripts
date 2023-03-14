@@ -1,0 +1,11 @@
+In pages 100-150 of "Raspberry Pi User Guide" by Eben Upton and Gareth Halfacree, the authors dive deeper into the technical aspects of the Raspberry Pi. They begin by discussing how to set up a wireless network, including how to configure the wireless settings and how to troubleshoot common problems. They also cover how to set up a wired network, including how to connect to a router and how to use SSH to remotely access the Pi.
+
+The authors then move on to programming, starting with an introduction to Python. They explain how to use Python to control the GPIO pins on the Pi, which can be used to control LEDs, motors, and other electronic components. They also discuss how to use Python to read sensor data and create graphical user interfaces.
+
+In addition to Python, the authors also cover other programming languages that can be used on the Pi, such as Scratch and Java. They explain the basics of each language and provide examples of how to use them on the Pi.
+
+One interesting topic covered in this section is the use of the Pi as a media center. The authors explain how to install and configure software such as Kodi and Plex, which can be used to stream video and music to the Pi. They also cover how to set up a digital TV receiver and how to use the Pi as a DVR.
+
+Another useful topic covered in this section is the use of the Pi as a web server. The authors explain how to install and configure the Apache web server software on the Pi, and how to create and host web pages. They also cover how to use the Pi as a file server, allowing files to be shared over a network.
+
+Overall, pages 100-150 of "Raspberry Pi User Guide" provide a comprehensive overview of the technical aspects of the Raspberry Pi. The authors cover a wide range of topics, from setting up networks to programming to media center and web server applications. This section is a valuable resource for anyone looking to get the most out of their Pi.
