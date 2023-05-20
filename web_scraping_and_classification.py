@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-# Web Scraping
+# Web Scraping Setup
 url = "https://www.example.com"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
